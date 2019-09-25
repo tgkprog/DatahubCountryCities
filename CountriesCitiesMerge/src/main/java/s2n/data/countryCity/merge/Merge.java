@@ -94,7 +94,7 @@ public class Merge {
 			Collection<CountryWithCities> countriesList = countriesWithCitiesMap.values();
 			File fileOutRem = new File(outputRootFolder, "removeCountries.jsons");
 			final Writer outRemovCount = new BufferedWriter(new FileWriter(fileOutRem));
-			File fileOut = new File(outputRootFolder, "cc.jsons");
+			File fileOut = new File(outputRootFolder, "CountriesWithEmbeddedCities.jsons");
 			final Writer out = new BufferedWriter(new FileWriter(fileOut));
 
 			outRemovCount.write("use dev3globalcosmos;\n");
