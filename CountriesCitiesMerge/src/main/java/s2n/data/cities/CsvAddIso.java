@@ -51,6 +51,10 @@ public class CsvAddIso {
 			g = "db.Countries.insert(" ;
 			String end = ")";
 			writeJson("/d/syn/blacksmith/data/cities/5/world-countries_insert.json_cmds", countriesByName, g, end);
+			
+			g = "db.Cities.insert(" ;
+			writeJson("/d/syn/blacksmith/data/cities/5/world-cities.bsons", citiesByCode, "", "");
+			
 			g = "db.Cities.insert(" ;
 			writeJson("/d/syn/blacksmith/data/cities/5/world-cities_insert.json_cmds", citiesByCode, g, end);
 			

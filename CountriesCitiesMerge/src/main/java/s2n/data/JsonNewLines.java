@@ -13,8 +13,12 @@ import java.io.Writer;
 public class JsonNewLines {
 
 	public static void main(String[] args) {
-		File in = new File("/d/syn/blacksmith/data/cities/9/o1.jsons");
-		File out = new File("/d/syn/blacksmith/data/cities/9/o2.jsons");
+		//File in = new File("/d/syn/blacksmith/data/cities/9/o1.jsons");
+		//File out = new File("/d/syn/blacksmith/data/cities/9/o2.jsons");
+		
+		File in = new File("/u/apps/datahub_io/core/world-cities/data/world-cities_json.json");
+		File out = new File("/u/apps/datahub_io/core/world-cities/data/world-cities_lines.json");
+		
 		new JsonNewLines(in, out);
 	}
 
